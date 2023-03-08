@@ -14,8 +14,6 @@ function testVars() {
 	var chomik = "syryjski";
 }
 
-console.log(one);
-
 /*
 Wnioski:
 */
