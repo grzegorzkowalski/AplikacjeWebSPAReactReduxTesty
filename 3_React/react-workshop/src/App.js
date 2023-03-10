@@ -11,6 +11,8 @@ import TextTyper from "./components/Chapter08/TextTyper";
 import Counter from "./components/Chapter08/Counter";
 import Shop from "./components/Chapter09/Shop";
 import NumberInfo from "./components/Chapter10/NumberInfo";
+import SecretStuff from "./components/Chapter10/SecretStuff";
+import CarList from "./components/Chapter11/CarList";
 
 function App() {
   const imageUrl = "https://cdn.pixabay.com/photo/2012/11/02/13/02/car-63930_960_720.jpg";
@@ -35,12 +37,23 @@ function App() {
         {/*<TextTyper text="Witaj!" />*/}
         {/*<Counter />*/}
         {/*<Shop />*/}
-        <NumberInfo number={1} />
-        <NumberInfo number={2} />
-        <NumberInfo number={5} />
-        <NumberInfo number={7} />
-        <NumberInfo number={10} />
-        <NumberInfo number={16} />
+        {/*<NumberInfo number={1} />*/}
+        {/*<NumberInfo number={2} />*/}
+        {/*<NumberInfo number={5} />*/}
+        {/*<NumberInfo number={7} />*/}
+        {/*<NumberInfo number={10} />*/}
+        {/*<NumberInfo number={16} />*/}
+        {/*<SecretStuff*/}
+        {/*    password="Test1234"*/}
+        {/*    correctPassword="Test12345"*/}
+        {/*    secret="Lubię pizzę"*/}
+        {/*/>*/}
+        {/*  <SecretStuff*/}
+        {/*      password="Test12345"*/}
+        {/*      correctPassword="Test12345"*/}
+        {/*      secret="Lubię uczyć"*/}
+        {/*  />*/}
+        <CarList />
       </header>
     </div>
   );
