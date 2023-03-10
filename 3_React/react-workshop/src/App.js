@@ -13,6 +13,8 @@ import Shop from "./components/Chapter09/Shop";
 import NumberInfo from "./components/Chapter10/NumberInfo";
 import SecretStuff from "./components/Chapter10/SecretStuff";
 import CarList from "./components/Chapter11/CarList";
+import AddTwoNumbers from "./components/Chapter11/AddTwoNumbers";
+import BookInfo from "./components/Chapter12/BookInfo";
 
 function App() {
   const imageUrl = "https://cdn.pixabay.com/photo/2012/11/02/13/02/car-63930_960_720.jpg";
@@ -53,7 +55,9 @@ function App() {
         {/*      correctPassword="Test12345"*/}
         {/*      secret="Lubię uczyć"*/}
         {/*  />*/}
-        <CarList />
+        {/*<CarList />*/}
+        {/*<AddTwoNumbers />*/}
+          <BookInfo isbn="0747532699" />
       </header>
     </div>
   );
