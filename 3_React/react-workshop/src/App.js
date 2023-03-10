@@ -15,6 +15,7 @@ import SecretStuff from "./components/Chapter10/SecretStuff";
 import CarList from "./components/Chapter11/CarList";
 import AddTwoNumbers from "./components/Chapter11/AddTwoNumbers";
 import BookInfo from "./components/Chapter12/BookInfo";
+import Pokemon from "./components/Chapter12/Pokemon";
 
 function App() {
   const imageUrl = "https://cdn.pixabay.com/photo/2012/11/02/13/02/car-63930_960_720.jpg";
@@ -57,7 +58,8 @@ function App() {
         {/*  />*/}
         {/*<CarList />*/}
         {/*<AddTwoNumbers />*/}
-          <BookInfo isbn="0747532699" />
+        {/*  <BookInfo isbn="0747532699" />*/}
+          <Pokemon />
       </header>
     </div>
   );
