@@ -8,7 +8,8 @@ const Clock = () => {
     useEffect(() => {
         const intervalID = setInterval(() => {
             setStateDate(new Date());
-        }, 1000)
+        }, 1000);
+        return () => clearInterval(intervalID);
     }, [])
     return (
         <>
