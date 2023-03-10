@@ -5,6 +5,7 @@ import shopItems from "./data/shopItems";
 import menu from "./data/menu";
 import HelloWorld from "./components/Chapter07/HelloWorld";
 import StrobeLight from "./components/Chapter07/StrobeLight";
+import Clock from "./components/Chapter07/Clock";
 
 function App() {
   const imageUrl = "https://cdn.pixabay.com/photo/2012/11/02/13/02/car-63930_960_720.jpg";
@@ -22,7 +23,8 @@ function App() {
         {/*<HelloWorld />*/}
         {/*<StrobeLight color="yellow" frequency={500} />*/}
         {/*<StrobeLight color="pink" frequency={1500} />*/}
-        <StrobeLight color="magenta" frequency={1000} />
+        {/*<StrobeLight color="magenta" frequency={1000} />*/}
+        <Clock />
       </header>
     </div>
   );
