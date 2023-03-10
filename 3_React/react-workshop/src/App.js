@@ -8,6 +8,7 @@ import StrobeLight from "./components/Chapter07/StrobeLight";
 import Clock from "./components/Chapter07/Clock";
 import ShowUserFunc from "./components/Chapter08/ShowUserFunc";
 import TextTyper from "./components/Chapter08/TextTyper";
+import Counter from "./components/Chapter08/Counter";
 
 function App() {
   const imageUrl = "https://cdn.pixabay.com/photo/2012/11/02/13/02/car-63930_960_720.jpg";
@@ -29,7 +30,8 @@ function App() {
         {/*<Clock />*/}
         {/*<ShowUserFunc />*/}
         {/*<ShowUserFunc name="Grzegorz" surname="Kowalski" />*/}
-        <TextTyper text="Witaj!" />
+        {/*<TextTyper text="Witaj!" />*/}
+        <Counter />
       </header>
     </div>
   );
