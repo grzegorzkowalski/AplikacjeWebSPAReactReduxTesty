@@ -4,7 +4,7 @@ export default function Pokemon() {
     const [pokemon, setPokemon] = useState([]);
     const [loadStatus, setLoadStatus] = useState('Ładowanie danych...');
     useEffect(() => {
-        fetch('https://pokeapi.co/api/v2/pokemon')
+        fetch('https://pokeapi.co/api/v2/pokemon?&limit=1300')
             .then(data => data.json())
             .then(result => {
                 setLoadStatus('');
@@ -17,7 +17,7 @@ export default function Pokemon() {
         <>{loadStatus}
             <ul>
                 {pokemon && pokemon.map((pokemon) => (
-                    <li key={pokemon.name}>{pokemon.name}</li>
+                    <li key={pokemon.name}><a href={pokemon.url}>{pokemon.name}</a></li>
                 ))}
             </ul>
         </>
