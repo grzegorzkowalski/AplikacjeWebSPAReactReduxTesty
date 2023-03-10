@@ -5,20 +5,21 @@ const StrobeLight = ({color, frequency }) => {
 
     useEffect(() => {
         const intervalID = setInterval(() => {
-            console.log(color, bgColor);
-            if (bgColor === "white") {
-                console.log("in bg");
-                setBgColor(color);
-            }
-            else {
-                console.log("in white");
-                setBgColor("white")
-            }
+            setBgColor(prev => {
+                if (prev === "white") {
+                    console.log("in bg");
+                    setBgColor(color);
+                }
+                else {
+                    console.log("in white");
+                    setBgColor("white")
+                }
+            });
         }, frequency);
         return () => {
             clearInterval(intervalID);
         }
-    });
+    }, []);
 
     return (
         <div style={{
