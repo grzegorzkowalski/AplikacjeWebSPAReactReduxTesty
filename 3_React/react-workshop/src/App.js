@@ -10,6 +10,7 @@ import ShowUserFunc from "./components/Chapter08/ShowUserFunc";
 import TextTyper from "./components/Chapter08/TextTyper";
 import Counter from "./components/Chapter08/Counter";
 import Shop from "./components/Chapter09/Shop";
+import NumberInfo from "./components/Chapter10/NumberInfo";
 
 function App() {
   const imageUrl = "https://cdn.pixabay.com/photo/2012/11/02/13/02/car-63930_960_720.jpg";
@@ -33,7 +34,13 @@ function App() {
         {/*<ShowUserFunc name="Grzegorz" surname="Kowalski" />*/}
         {/*<TextTyper text="Witaj!" />*/}
         {/*<Counter />*/}
-        <Shop />
+        {/*<Shop />*/}
+        <NumberInfo number={1} />
+        <NumberInfo number={2} />
+        <NumberInfo number={5} />
+        <NumberInfo number={7} />
+        <NumberInfo number={10} />
+        <NumberInfo number={16} />
       </header>
     </div>
   );
