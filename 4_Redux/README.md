@@ -1,6 +1,11 @@
 ## Context API i Redux
 
-## Zadanie 1 Stop-watch wersja Context
+## Zadanie 1 Stop-watch wersja z wykorzystaniem Redux Toolkit.
+
+Stwórz aplikacje z wykorzystaniem odpowiedniego template `npx create-react-app my-app --template redux`.
+
+Template daje dużo predefiniowanych możliwości, które nie będą potrzebne w prostej aplikacji. Możesz template odchudzić
+albo zainstalować: `npx create-react-app stop-watch` i `npm install @reduxjs/toolkit react-redux`.
 
 Zaimplementuj aplikację stopera. Ma ona wyświetlać dwa przyciski start oraz stop.
 Odpowiednio startujące i zatrzymujące licznik po kliknięciu. Przyciski te powinny być na zmianę wyłączone tj.:
@@ -18,7 +23,8 @@ Przykładowy stan aplikacji:
 ```js
 {
   "isCounting": false,
-  "value": 0
+  "value": 0,
+  "list": []
 }
 ```
 
@@ -42,12 +48,3 @@ Docelowy html aplikacji:
   </div>
 </div>
 ```
-
-## Zadanie 2 
-
-###Wykonaj powyższe zadanie z wykorzystaniem Redux Toolkit.
-
-Stwórz aplikacje z wykorzystaniem odpowiedniego template `npx create-react-app my-app --template redux`.
-
-Template daje dużo predefiniowanych możliwości, które nie będą potrzebne w prostej aplikacji. Możesz template odchudzić
-albo zainstalować: `npx create-react-app stop-watch` i `npm install @reduxjs/toolkit react-redux`.
