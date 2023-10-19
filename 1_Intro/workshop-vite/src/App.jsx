@@ -10,6 +10,7 @@ import ShopItem from "./components/ShopItem .jsx";
 import ShopList from "./components/ShopList.jsx";
 import HelloWorld from "./components/HelloWorld.jsx";
 import StrobeLight from "./components/StrobeLight.jsx";
+import Counter from "./components/Counter.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -66,10 +67,11 @@ function App() {
         {/*<ShopItem shopItemData={item} />*/}
         {/*<ShopList devices={devices} shop="Lidl" openH="8-22" />*/}
         <HelloWorld />
-        <StrobeLight color="yellow" frequency={500} />
-        <StrobeLight color="deeppink" frequency={100} />
-        <StrobeLight color="magenta" frequency={200} />
-        <StrobeLight color="cornflowerblue" frequency={400} />
+        {/*<StrobeLight color="yellow" frequency={500} />*/}
+        {/*<StrobeLight color="deeppink" frequency={100} />*/}
+        {/*<StrobeLight color="magenta" frequency={200} />*/}
+        {/*<StrobeLight color="cornflowerblue" frequency={400} />*/}
+        <Counter />
     </>
   )
 }
