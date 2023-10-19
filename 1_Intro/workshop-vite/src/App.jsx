@@ -7,6 +7,9 @@ import Menu from "./components/Menu.jsx";
 import Search from "./components/Search.jsx";
 import LikeBox from "./components/LikeBox.jsx";
 import ShopItem from "./components/ShopItem .jsx";
+import ShopList from "./components/ShopList.jsx";
+import HelloWorld from "./components/HelloWorld.jsx";
+import StrobeLight from "./components/StrobeLight.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,16 +38,38 @@ function App() {
       description: "Moc i mobilność – MacBook Pro wyraźnie podnosi tu poprzeczkę. Teraz możesz jeszcze szybciej realizować swoje pomysły. Pomogą Ci w tym wydajne procesory i układy pamięci, zaawansowana grafika, błyskawicznie działająca pamięć masowa i inne doskonałe rozwiązania.",
       price: 9999
   };
+  const devices = [
+      {
+          title: "Mysz komputerowa",
+          image: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Red_computer_mouse.jpg"
+      },
+      {
+          title: "Klawiatura",
+          image:
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Computer_keyboard_Danish_layout.svg/1000px-Computer_keyboard_Danish_layout.svg.png"
+      },
+      {
+          title: "Laptop programisty",
+          image:
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Typing_computer_screen_reflection.jpg/640px-Typing_computer_screen_reflection.jpg"
+      }
+  ];
 
   return (
     <>
         {/*<LearnJSX />*/}
         {/*<LearnAtribiutes />*/}
         {/*<LearnNesting />*/}
-        <Menu list={list} />
-        <Search />
-        <LikeBox />
-        <ShopItem shopItemData={item} />
+        {/*<Menu list={list} />*/}
+        {/*<Search />*/}
+        {/*<LikeBox />*/}
+        {/*<ShopItem shopItemData={item} />*/}
+        {/*<ShopList devices={devices} shop="Lidl" openH="8-22" />*/}
+        <HelloWorld />
+        <StrobeLight color="yellow" frequency={500} />
+        <StrobeLight color="deeppink" frequency={100} />
+        <StrobeLight color="magenta" frequency={200} />
+        <StrobeLight color="cornflowerblue" frequency={400} />
     </>
   )
 }
