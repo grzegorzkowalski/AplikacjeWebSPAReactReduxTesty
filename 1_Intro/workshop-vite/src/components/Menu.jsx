@@ -1,12 +1,11 @@
 import React from 'react';
 
-const Menu = () => {
+const Menu = ({list}) => {
     return (
         <ul>
-            <li><a href="/">Strona główna</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/cennik">Cennik</a></li>
-            <li><a href="/kontakt">Kontakt</a></li>
+            {
+                list.map((el, i) => <li key={i}><a href={el.url}>{el.text}</a></li>)
+            }
         </ul>
     );
 };
