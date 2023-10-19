@@ -6,6 +6,7 @@ import './App.css';
 import Menu from "./components/Menu.jsx";
 import Search from "./components/Search.jsx";
 import LikeBox from "./components/LikeBox.jsx";
+import ShopItem from "./components/ShopItem .jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,6 +29,13 @@ function App() {
             text: "Kontakt"
         }
     ]
+  const item = {
+      title: "MacBook Pro",
+      image: "https://f00.esfr.pl/foto/6/107612067049/acf30858ad6c4ad0abc24cc6c4ba71ff/apple-laptop-mbp-m2-8gb-256ssd-us-grey,107612067049_3.jpg",
+      description: "Moc i mobilność – MacBook Pro wyraźnie podnosi tu poprzeczkę. Teraz możesz jeszcze szybciej realizować swoje pomysły. Pomogą Ci w tym wydajne procesory i układy pamięci, zaawansowana grafika, błyskawicznie działająca pamięć masowa i inne doskonałe rozwiązania.",
+      price: 9999
+  };
+
   return (
     <>
         {/*<LearnJSX />*/}
@@ -36,6 +44,7 @@ function App() {
         <Menu list={list} />
         <Search />
         <LikeBox />
+        <ShopItem shopItemData={item} />
     </>
   )
 }
