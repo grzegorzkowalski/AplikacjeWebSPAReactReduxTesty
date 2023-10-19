@@ -11,6 +11,7 @@ import ShopList from "./components/ShopList.jsx";
 import HelloWorld from "./components/HelloWorld.jsx";
 import StrobeLight from "./components/StrobeLight.jsx";
 import Counter from "./components/Counter.jsx";
+import Modal from "./components/Modal.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -72,6 +73,7 @@ function App() {
         {/*<StrobeLight color="magenta" frequency={200} />*/}
         {/*<StrobeLight color="cornflowerblue" frequency={400} />*/}
         <Counter />
+        <Modal heading="Zapisz się do newslettera!!!"/>
     </>
   )
 }
