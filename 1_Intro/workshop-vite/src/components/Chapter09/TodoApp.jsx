@@ -16,6 +16,11 @@ const TodoApp = () => {
         setItems(prev => prev.filter(el => el.id !== id))
     }
 
+    // const setItemWithValidate = (e) => {
+    //     //sprawdz
+    //     setItem(e.target.value)
+    // }
+
     return (
         <div>
             <form onSubmit={(e) => addToList(e, item)}>
