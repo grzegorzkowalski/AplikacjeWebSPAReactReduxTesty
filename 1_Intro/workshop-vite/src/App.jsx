@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, {useContext, useState} from 'react';
 import LearnJSX from "./components/LearnJSX";
 import LearnAtribiutes from "./components/LearnAtribiutes";
 import LearnNesting from "./components/LearnNesting";
@@ -12,6 +12,8 @@ import HelloWorld from "./components/HelloWorld.jsx";
 import StrobeLight from "./components/StrobeLight.jsx";
 import Counter from "./components/Counter.jsx";
 import Modal from "./components/Modal.jsx";
+import CounterProvider from "./context/counterContext.jsx";
+import Stoper from "./stoper/Stoper.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -58,23 +60,12 @@ function App() {
   ];
 
   return (
-    <>
-        {/*<LearnJSX />*/}
-        {/*<LearnAtribiutes />*/}
-        {/*<LearnNesting />*/}
-        {/*<Menu list={list} />*/}
-        {/*<Search />*/}
-        {/*<LikeBox />*/}
-        {/*<ShopItem shopItemData={item} />*/}
-        {/*<ShopList devices={devices} shop="Lidl" openH="8-22" />*/}
+    <CounterProvider>
         <HelloWorld />
-        {/*<StrobeLight color="yellow" frequency={500} />*/}
-        {/*<StrobeLight color="deeppink" frequency={100} />*/}
-        {/*<StrobeLight color="magenta" frequency={200} />*/}
-        {/*<StrobeLight color="cornflowerblue" frequency={400} />*/}
         <Counter />
         <Modal heading="Zapisz się do newslettera!!!"/>
-    </>
+        <Stoper />
+    </CounterProvider>
   )
 }
 

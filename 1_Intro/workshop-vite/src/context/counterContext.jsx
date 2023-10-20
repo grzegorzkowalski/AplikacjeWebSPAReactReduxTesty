@@ -1,11 +1,19 @@
 import {createContext, useContext, useState} from "react";
 
-const CounterContext = createContext();
+const CounterContext = createContext({
+    counter: {
+        isCounting: false,
+        value: 0,
+        list: []
+    },
+    setCounter: () => null
+});
 
 const CounterProvider = ({children}) => {
     const [counter, setCounter] = useState({
         isCounting: false,
-        value: 0
+        value: 0,
+        list: []
     });
 
     const value = {
@@ -22,5 +30,5 @@ const CounterProvider = ({children}) => {
 
 export default CounterProvider;
 
-export const useCounterContext = useContext(CounterContext);
+export {CounterContext};
 
