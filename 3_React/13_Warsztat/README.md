@@ -7,5 +7,4 @@
 5. Feed produktowy znajduje się w pliku `products.json` – stwórz z niego endpoint przy pomocy narzędzia `json-server.`
 
 – Aby stworzyć routing użyj biblioteki `react-router-dom`.
-– Stan koszyka powinien być przetrzymywany w kontekście strony `context api`.
 – Do stylowania możesz użyć biblioteki Bootstrap albo MaterialUI.

@@ -3,5 +3,5 @@
 ### Zadanie 1
 
 - Stwórz konfigurację projektu przy pomocy komendy `npm init`.
-- Stwórz nową aplikację `create-react-app`.
+- Stwórz nową aplikację `vite`.
 - Zapoznaj się z budową aplikacji.
