@@ -9,6 +9,7 @@ import fruits from "./data/fruits";
 import people from "./data/people.js";
 import './App.css';
 import Box from "./components/Chapter07/Box.jsx";
+import StrobeLight from "./components/Chapter07/StrobeLight.jsx";
 
 function App() {
   // const numberA = parseInt(prompt("Podaj liczbę A?"));
@@ -92,6 +93,9 @@ function App() {
           {/*<ParentComponent />*/}
           {/*<ShopItem data={data} />*/}
           <Box />
+          <StrobeLight color="deeppink" frequency={500} />
+          <StrobeLight color="magenta" frequency={100} />
+          <StrobeLight color="blue" frequency={200} />
       </div>
     </>
   )
