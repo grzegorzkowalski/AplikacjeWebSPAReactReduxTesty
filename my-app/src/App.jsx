@@ -10,6 +10,10 @@ import people from "./data/people.js";
 import './App.css';
 import Box from "./components/Chapter07/Box.jsx";
 import StrobeLight from "./components/Chapter07/StrobeLight.jsx";
+import ShowUserFunc from "./components/Chapter08/ShowUserFunc.jsx";
+import TextTyper from "./components/Chapter08/TextTyper.jsx";
+import Shop from "./components/Chapter09/Shop.jsx";
+import NumberInfo from "./components/Chapter10/NumberInfo.jsx";
 
 function App() {
   // const numberA = parseInt(prompt("Podaj liczbę A?"));
@@ -48,6 +52,7 @@ function App() {
   //   const randomA = randomNumber();
   //   const randomB = randomNumber();
   //   const sum = parseInt(prompt(`Podaj wynik dodawania ${randomA} + ${randomB}?`));
+  const numbers = [1,2,5,7,10,12];
 
   return (
     <>
@@ -92,10 +97,16 @@ function App() {
           {/*<CurrencyConverter from="EUR" to="PLN" value={100} rate={4} />*/}
           {/*<ParentComponent />*/}
           {/*<ShopItem data={data} />*/}
-          <Box />
-          <StrobeLight color="deeppink" frequency={500} />
-          <StrobeLight color="magenta" frequency={100} />
-          <StrobeLight color="blue" frequency={200} />
+          {/*<Box />*/}
+          {/*<StrobeLight color="deeppink" frequency={500} />*/}
+          {/*<StrobeLight color="magenta" frequency={100} />*/}
+          {/*<StrobeLight color="blue" frequency={200} />*/}
+          {/*<ShowUserFunc name="Grzegorz" surname="Kowalski" />*/}
+          {/*<TextTyper text="Witaj!" />*/}
+          {/*<Shop />*/}
+          {
+              numbers.map((el) => <NumberInfo number={el} key={el} />)
+          }
       </div>
     </>
   )
