@@ -3,6 +3,8 @@ import artist from "./data/artist";
 import fruits from "./data/fruits";
 import people from "./data/people.js";
 import './App.css';
+import Hello from "./components/Chapter05/Hello";
+import CurrencyConverter from "./components/Chapter05/CurrencyConverter";
 
 function App() {
   // const numberA = parseInt(prompt("Podaj liczbę A?"));
@@ -77,6 +79,12 @@ function App() {
           {/*    })*/}
           {/*}*/}
           <Search />
+          <Hello name="Grzegorz" surname="Kowalski" />
+          <Hello name="Grzegorz2" surname="Kowalski" />
+          <Hello name="Grzegorz3" surname="Kowalski" />
+          <CurrencyConverter from="EUR" to="USD" value={200} rate={1.12275} />
+          <CurrencyConverter from="PLN" to="USD" value={100} rate={0.25} />
+          <CurrencyConverter from="EUR" to="PLN" value={100} rate={4} />
       </div>
     </>
   )
