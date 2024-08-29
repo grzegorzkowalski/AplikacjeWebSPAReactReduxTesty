@@ -1,5 +1,6 @@
 import artist from "./data/artist";
 import fruits from "./data/fruits";
+import people from "./data/people.js";
 import './App.css';
 
 function App() {
@@ -61,6 +62,19 @@ function App() {
           }}>
               <p>{sum === randomA + randomB ? "Odpowiedź poprawna" : "Odpowiedź błędna"}</p>
           </div>
+          {
+              people.map((el) => {
+                  return (
+                      <div className="person" key={el.id}>
+                          <img src={el.avatar} alt={el.surname} />
+                          <div className="info">
+                              <h1>{el.title} {el.name} {el.surname}</h1>
+                              <p>{el.bio}</p>
+                          </div>
+                      </div>
+                  )
+              })
+          }
       </div>
     </>
   )
