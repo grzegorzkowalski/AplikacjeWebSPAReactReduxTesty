@@ -1,10 +1,13 @@
 import Search from "./components/Search";
+import Hello from "./components/Chapter05/Hello";
+import CurrencyConverter from "./components/Chapter05/CurrencyConverter";
+import ParentComponent from "./components/Chapter06/ParentComponent.jsx";
+import ShopItem from "./components/Chapter06/ShopItem.jsx";
+import data from "./data/computer";
 import artist from "./data/artist";
 import fruits from "./data/fruits";
 import people from "./data/people.js";
 import './App.css';
-import Hello from "./components/Chapter05/Hello";
-import CurrencyConverter from "./components/Chapter05/CurrencyConverter";
 
 function App() {
   // const numberA = parseInt(prompt("Podaj liczbę A?"));
@@ -85,6 +88,8 @@ function App() {
           <CurrencyConverter from="EUR" to="USD" value={200} rate={1.12275} />
           <CurrencyConverter from="PLN" to="USD" value={100} rate={0.25} />
           <CurrencyConverter from="EUR" to="PLN" value={100} rate={4} />
+          <ParentComponent />
+          <ShopItem data={data} />
       </div>
     </>
   )
