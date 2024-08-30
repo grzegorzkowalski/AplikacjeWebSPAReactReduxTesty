@@ -29,7 +29,7 @@ const router = createBrowserRouter([
                 element: <FindWeather />,
             },
             {
-                path: "cityweather",
+                path: "cityweather/:city",
                 element: <CityWeather />,
             },
         ]
