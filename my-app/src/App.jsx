@@ -7,13 +7,15 @@ import data from "./data/computer";
 import artist from "./data/artist";
 import fruits from "./data/fruits";
 import people from "./data/people.js";
-import './App.css';
 import Box from "./components/Chapter07/Box.jsx";
 import StrobeLight from "./components/Chapter07/StrobeLight.jsx";
 import ShowUserFunc from "./components/Chapter08/ShowUserFunc.jsx";
 import TextTyper from "./components/Chapter08/TextTyper.jsx";
 import Shop from "./components/Chapter09/Shop.jsx";
-import NumberInfo from "./components/Chapter10/NumberInfo.jsx";
+import NumberInfo from "./components/Chapter10/NumberInfo";
+import Hello2 from "./components/Chapter11/Hello";
+import './App.css';
+import SelectOrType from "./components/Chapter11/SelectOrType.jsx";
 
 function App() {
   // const numberA = parseInt(prompt("Podaj liczbę A?"));
@@ -104,9 +106,11 @@ function App() {
           {/*<ShowUserFunc name="Grzegorz" surname="Kowalski" />*/}
           {/*<TextTyper text="Witaj!" />*/}
           {/*<Shop />*/}
-          {
-              numbers.map((el) => <NumberInfo number={el} key={el} />)
-          }
+          {/*{*/}
+          {/*    numbers.map((el) => <NumberInfo number={el} key={el} />)*/}
+          {/*}*/}
+          {/*<Hello2 />*/}
+          <SelectOrType items={["BMW", "Jaguar", "Porsche"]} />
       </div>
     </>
   )
