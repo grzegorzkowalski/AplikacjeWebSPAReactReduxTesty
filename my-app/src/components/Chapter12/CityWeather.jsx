@@ -1,31 +1,31 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
-import {OWApiKey} from "../../consts/apiKeys.js";
+import ShowWeather from "./ShowWeather.jsx";
+import {getPhoto, getWeather} from "../../api/weather.js";
 
 const CityWeather = () => {
-    const [weather, setWeather] = useState(false);
     const [temp, setTemp] = useState('');
     const [description, setDescription] = useState('');
+    const [photo, setPhoto] = useState('');
     const {city} = useParams();
-    const url = "https://api.openweathermap.org/data/2.5/weather"
 
     useEffect(() => {
-        fetch(`${url}?q=${city}&appid=${OWApiKey}&units=metric&lang=pl`)
-            .then(res => res.json())
-            .then(data => {
-                setWeather(data);
-                setTemp(data.main.temp)
-                setDescription(data.weather[0].description)
-            } )
-            .catch(err => console.log(err));
+        getWeather(setTemp, setDescription, city);
     }, []);
+
+    useEffect(() => {
+        if (description) {
+            getPhoto(description, setPhoto);
+        }
+    }, [description]);
+
     return (
-        <div>
-            <p>{city}</p>
-            {weather && <p>Temperatura: {temp}</p>}
-            {weather && <p>Opis: {description}</p>}
-        </div>
-    );
+        (temp && photo) && <ShowWeather
+        temp={temp}
+        photo={photo}
+        description={description}
+        city={city}
+    />)
 };
 
 export default CityWeather;
