@@ -2,6 +2,10 @@
 
 ## Zadanie 1 Stop-watch wersja Redux
 
+Stwórz nową aplikacje. 
+
+`npm create vite@latest stop-watch -- --template react` i `npm install redux react-redux`.
+
 Zaimplementuj aplikację stopera. Ma ona wyświetlać dwa przyciski start oraz stop.
 Odpowiednio startujące i zatrzymujące licznik po kliknięciu. Przyciski te powinny być na zmianę wyłączone tj.:
 jeśli licznik nie jest włączony to przycisk stop jest disabled,
@@ -47,7 +51,6 @@ Docelowy html aplikacji:
 
 Wykonaj powyższe zadanie z wykorzystaniem `Redux Toolkit`.
 
-Stwórz aplikacje z wykorzystaniem odpowiedniego template `npx degit reduxjs/redux-templates/packages/vite-template-redux stop-watch`.
+Stwórz nową aplikacje.
 
-Template daje dużo predefiniowanych możliwości, które nie będą potrzebne w prostej aplikacji. Możesz template odchudzić
-albo zainstalować: `npm create vite@latest stop-watch -- --template react` i `npm install @reduxjs/toolkit react-redux`.
+`npm create vite@latest stop-watch-toolkit -- --template react` i `npm install @reduxjs/toolkit react-redux`.
