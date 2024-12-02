@@ -1,4 +1,4 @@
-cd m    ## Zadanie 1
+## Zadanie 1
 
 
 
