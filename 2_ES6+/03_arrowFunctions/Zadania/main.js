@@ -35,3 +35,18 @@ const runInterval = (n = 8) => {
 };
 
 runInterval(undefined);
+
+//Zadanie 3
+
+const links = ["google", "twitter", "facebook"];
+
+const generateLinks = (tab) => {
+    return tab.map(el => "https://" + el + ".com");
+}
+
+const generateLinks2 = (tab) => {
+    return tab.map(el => `https://${el}.com`);
+}
+
+console.log(generateLinks(links));
+console.log(generateLinks2(links));
