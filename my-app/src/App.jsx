@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import person from "./data/artist";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const numberA = parseInt(prompt("Podaj pierwszą liczbę?"));
+  const numberB = parseInt(prompt("Podaj drugą liczbę?"));
+  const birthdate = parseInt(prompt("Podaj rok urodzenia?"));
+  const operator = prompt("Wybierz działanie (+,-,*,/)?");
+
+  // throw new Error("testujemy");
+  // console.error("Zepsuliśmy");
+  // console.log("test");
+  let result;
+  switch (operator) {
+    case "+":
+      result = <h1>{numberA} + {numberB} = {numberA + numberB}</h1>;
+      break;
+    case "-":
+      result = <h2>{numberA} - {numberB} = {numberA - numberB}</h2>;
+      break;
+    case "*":
+      result = <h3>{numberA} * {numberB} = {numberA * numberB}</h3>;
+      break;
+    case "/":
+      result = <h4>{numberA} / {numberB} = {numberA / numberB}</h4>;
+      break;
+    default:
+      result = <h5>Błedne dane</h5>
+      break;
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h2>Suma: {numberA + numberB}</h2>
+      <h3>Twój wiek: {!isNaN(birthdate) ? new Date().getFullYear() - birthdate : "złe dane"}</h3>
+      <ul>
+        <li>{person.firstName}</li>
+        <li>{person.lastName}</li>
+        <li>{person.nickname}</li>
+        <li>{person.age}</li>
+      </ul>
+      {result}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
