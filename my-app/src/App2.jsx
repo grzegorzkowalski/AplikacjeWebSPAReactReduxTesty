@@ -12,6 +12,15 @@ function App() {
     borderStyle: "solid",
     borderWidth: "5px"
   }
+
+  const basicStyles = {
+    width: "100px",
+    height: "100px",
+  }
+
+  const redDiv = <div style={{...basicStyles, backgroundColor: "red"}} />;
+  const greenDiv = <div style={{...basicStyles, backgroundColor: "green"}} />;
+  const blueDiv = <div style={{...basicStyles, backgroundColor: "blue"}} />;
   // const numberA = parseInt(prompt("Podaj pierwszą liczbę?"));
   // const numberB = parseInt(prompt("Podaj drugą liczbę?"));
   // const birthdate = parseInt(prompt("Podaj rok urodzenia?"));
@@ -53,6 +62,9 @@ function App() {
       {
         isOkColor ? <div style={styles} /> : <div>Nieprawidłowy wybór koloru</div>
       }
+      {redDiv}
+      {greenDiv}
+      {blueDiv}
     </>
   );
 }

@@ -1,35 +1,26 @@
 import './App.css';
+import people from "./data/people";
 
 function App() {
-  const color = prompt("Wybierz kolor (red, green, blue)?");
-  const isOkColor = ["red", "green", "blue"].includes(color);
 
-  const styles = {
-    width: "100px",
-    height: "100px",
-    borderColor: color,
-    borderStyle: "solid",
-    borderWidth: "5px"
+  const createPeople = (el) => {
+    return (
+        <div className="person" key={el.id}>
+          <img src={el.avatar} alt={`${el.name} ${el.surname}`} />
+          <div className="info">
+            <h1>{el.title} {el.name} {el.surname}</h1>
+            <p>{el.bio}</p>
+          </div>
+        </div>
+    )
   }
-
-  const basicStyles = {
-    width: "100px",
-    height: "100px",
-  }
-
-  const redDiv = <div style={{...basicStyles, backgroundColor: "red"}} />;
-  const greenDiv = <div style={{...basicStyles, backgroundColor: "green"}} />;
-  const blueDiv = <div style={{...basicStyles, backgroundColor: "blue"}} />;
-
 
   return (
     <>
+      <h1>Lista osób:</h1>
       {
-        isOkColor ? <div style={styles} /> : <div>Nieprawidłowy wybór koloru</div>
+        people.map(el => createPeople(el))
       }
-      {redDiv}
-      {greenDiv}
-      {blueDiv}
     </>
   );
 }
