@@ -1,3 +1,27 @@
+// Zadanie 1
+
+const [snow,,sun] = [ "snow", "rain", "sun" ];
+console.log(snow, sun);
+
+
+
+// Zadanie 2
+
+const slider = {
+    type: "infinite",
+    numberOfItems: 10,
+    center: true,
+    autoStart: true
+}
+
+const {type, autoStart, ...reszta} = slider;
+console.log(type, autoStart, reszta);
+
+//  Zadanie 3
+
+const [name1, name2, name3] = ["Grzegorz", "Marcin", "Bonawentura"];
+console.log(name1, name2, name3);
+
 // Zadanie 4
 
 const generateRandomNumbers = () => {
