@@ -1,5 +1,10 @@
 import './App.css';
 import people from "./data/people";
+import Results from "./components/Results";
+import Search from "./components/04_Chapter/Search";
+import Hello from "./components/05_Chapter/Hello";
+import elements from "./data/elements";
+import Menu from "./components/05_Chapter/Menu";
 
 function App() {
 
@@ -17,10 +22,14 @@ function App() {
 
   return (
     <>
-      <h1>Lista osób:</h1>
-      {
-        people.map(el => createPeople(el))
-      }
+      {/*<h1>Lista osób:</h1>*/}
+      {/*{*/}
+      {/*  people.map(el => createPeople(el))*/}
+      {/*}*/}
+      <Results />
+      <Search />
+      <Hello name="Grzegorz" surname="Kowalski" />
+      <Menu elements={elements} />
     </>
   );
 }
