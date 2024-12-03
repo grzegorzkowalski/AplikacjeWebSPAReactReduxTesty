@@ -12,11 +12,24 @@ function App() {
     borderWidth: "5px"
   }
 
+  const basicStyles = {
+    width: "100px",
+    height: "100px",
+  }
+
+  const redDiv = <div style={{...basicStyles, backgroundColor: "red"}} />;
+  const greenDiv = <div style={{...basicStyles, backgroundColor: "green"}} />;
+  const blueDiv = <div style={{...basicStyles, backgroundColor: "blue"}} />;
+
+
   return (
     <>
       {
         isOkColor ? <div style={styles} /> : <div>Nieprawidłowy wybór koloru</div>
       }
+      {redDiv}
+      {greenDiv}
+      {blueDiv}
     </>
   );
 }
