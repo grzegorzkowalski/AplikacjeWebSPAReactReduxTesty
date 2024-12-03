@@ -5,6 +5,10 @@ import Search from "./components/04_Chapter/Search";
 import Hello from "./components/05_Chapter/Hello";
 import elements from "./data/elements";
 import Menu from "./components/05_Chapter/Menu";
+import LikeBox from "./components/05_Chapter/LikeBox";
+import ShopItem from "./components/06_Chapter/ShopItem";
+import item from "./data/shopItem.js";
+import Box from "./components/07_Chapter/Box.jsx";
 
 function App() {
 
@@ -30,6 +34,9 @@ function App() {
       <Search />
       <Hello name="Grzegorz" surname="Kowalski" />
       <Menu elements={elements} />
+      <LikeBox likes={500} />
+      <ShopItem item={item} />
+      <Box />
     </>
   );
 }
