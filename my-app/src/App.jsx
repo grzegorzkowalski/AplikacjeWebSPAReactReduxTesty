@@ -10,6 +10,7 @@ import ShopItem from "./components/06_Chapter/ShopItem";
 import item from "./data/shopItem.js";
 import Box from "./components/07_Chapter/Box";
 import Clock from "./components/07_Chapter/Clock";
+import HelloWorld from "./components/07_Chapter/HelloWorld.jsx";
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
       <ShopItem item={item} />
       <Box />
       <Clock />
+      <HelloWorld />
     </>
   );
 }
