@@ -8,7 +8,8 @@ import Menu from "./components/05_Chapter/Menu";
 import LikeBox from "./components/05_Chapter/LikeBox";
 import ShopItem from "./components/06_Chapter/ShopItem";
 import item from "./data/shopItem.js";
-import Box from "./components/07_Chapter/Box.jsx";
+import Box from "./components/07_Chapter/Box";
+import Clock from "./components/07_Chapter/Clock";
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
       <LikeBox likes={500} />
       <ShopItem item={item} />
       <Box />
+      <Clock />
     </>
   );
 }
