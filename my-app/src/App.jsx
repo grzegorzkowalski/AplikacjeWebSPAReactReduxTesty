@@ -17,7 +17,8 @@ import EventsTest from "./components/08_Chapter/EventsTest";
 import Shop from "./components/09_Chapter/Shop";
 import NumberInfo from "./components/10_Chapter/NumberInfo.jsx";
 import Hello from "./components/11_Chapter/Hello.jsx";
-import SelectOrType from "./components/11_Chapter/SelectOrType.jsx";
+import Index from "./components/11_Chapter/SelectOrType/index.jsx";
+import IpFinder from "./components/12_Chapter/IpFinder.jsx";
 
 function App() {
 
@@ -58,7 +59,8 @@ function App() {
       {/*    [1, 2, 5, 7,10, 16].map((el, i) => <NumberInfo number={el} key={i} />)*/}
       {/*}*/}
       {/*<Hello />*/}
-      <SelectOrType items={items} />
+      <Index items={items} />
+      <IpFinder />
 
     </>
   );

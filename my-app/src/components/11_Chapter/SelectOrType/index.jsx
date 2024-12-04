@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
+import SelectCar from "./SelectCar.jsx";
 
-const SelectOrType = ({items}) => {
+const Index = ({items}) => {
     const [cars, setCars] = useState([...items, "Inne"]);
     const [selectedCar, setSelectedCar] = useState(cars[0]);
     const [inputCar, setInputCar] = useState("");
@@ -18,14 +19,11 @@ const SelectOrType = ({items}) => {
     return (
         <>
             <form onSubmit={submitHandler}>
-                <select
-                    value={selectedCar}
-                    onChange={(e) => setSelectedCar(e.target.value)}
-                >
-                    {
-                        cars.map((el, i) => <option value={el} key={i}>{el}</option>)
-                    }
-                </select>
+                <SelectCar
+                    cars={cars}
+                    selectedCar={selectedCar}
+                    setSelectedCar={setSelectedCar}
+                />
                 {
                     selectedCar === cars[cars.length-1]
                     && <div>
@@ -42,4 +40,4 @@ const SelectOrType = ({items}) => {
     );
 };
 
-export default SelectOrType;
+export default Index;
