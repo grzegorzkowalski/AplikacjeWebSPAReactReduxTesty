@@ -12,7 +12,9 @@ import Box from "./components/07_Chapter/Box";
 import Clock from "./components/07_Chapter/Clock";
 import HelloWorld from "./components/07_Chapter/HelloWorld.jsx";
 import Buttons from "./components/08_Chapter/Buttons.jsx";
-import CountThings from "./components/08_Chapter/CountThings.jsx";
+import CountThings from "./components/08_Chapter/CountThings";
+import EventsTest from "./components/08_Chapter/EventsTest";
+import Shop from "./components/09_Chapter/Shop";
 
 function App() {
 
@@ -45,6 +47,8 @@ function App() {
       {/*<HelloWorld />*/}
       {/*<Buttons />*/}
       <CountThings />
+      <EventsTest />
+      <Shop />
     </>
   );
 }
