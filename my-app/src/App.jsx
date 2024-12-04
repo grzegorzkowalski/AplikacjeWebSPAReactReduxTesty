@@ -12,6 +12,7 @@ import Box from "./components/07_Chapter/Box";
 import Clock from "./components/07_Chapter/Clock";
 import HelloWorld from "./components/07_Chapter/HelloWorld.jsx";
 import Buttons from "./components/08_Chapter/Buttons.jsx";
+import CountThings from "./components/08_Chapter/CountThings.jsx";
 
 function App() {
 
@@ -33,16 +34,17 @@ function App() {
       {/*{*/}
       {/*  people.map(el => createPeople(el))*/}
       {/*}*/}
-      <Results />
-      <Search />
-      <Hello name="Grzegorz" surname="Kowalski" />
-      <Menu elements={elements} />
-      <LikeBox likes={500} />
-      <ShopItem item={item} />
-      <Box />
-      <Clock />
-      <HelloWorld />
-      <Buttons />
+      {/*<Results />*/}
+      {/*<Search />*/}
+      {/*<Hello name="Grzegorz" surname="Kowalski" />*/}
+      {/*<Menu elements={elements} />*/}
+      {/*<LikeBox likes={500} />*/}
+      {/*<ShopItem item={item} />*/}
+      {/*<Box />*/}
+      {/*<Clock />*/}
+      {/*<HelloWorld />*/}
+      {/*<Buttons />*/}
+      <CountThings />
     </>
   );
 }
