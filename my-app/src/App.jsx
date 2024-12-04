@@ -2,7 +2,7 @@ import './App.css';
 import people from "./data/people";
 import Results from "./components/Results";
 import Search from "./components/04_Chapter/Search";
-import Hello from "./components/05_Chapter/Hello";
+//import Hello from "./components/05_Chapter/Hello";
 import elements from "./data/elements";
 import Menu from "./components/05_Chapter/Menu";
 import LikeBox from "./components/05_Chapter/LikeBox";
@@ -16,6 +16,8 @@ import CountThings from "./components/08_Chapter/CountThings";
 import EventsTest from "./components/08_Chapter/EventsTest";
 import Shop from "./components/09_Chapter/Shop";
 import NumberInfo from "./components/10_Chapter/NumberInfo.jsx";
+import Hello from "./components/11_Chapter/Hello.jsx";
+import SelectOrType from "./components/11_Chapter/SelectOrType.jsx";
 
 function App() {
 
@@ -30,6 +32,8 @@ function App() {
         </div>
     )
   }
+
+  const items = ["BMW", "Jaguar", "Porsche"];
 
   return (
     <>
@@ -47,12 +51,14 @@ function App() {
       {/*<Clock />*/}
       {/*<HelloWorld />*/}
       {/*<Buttons />*/}
-      <CountThings />
-      <EventsTest />
-      <Shop />
-      {
-          [1, 2, 5, 7,10, 16].map((el, i) => <NumberInfo number={el} key={i} />)
-      }
+      {/*<CountThings />*/}
+      {/*<EventsTest />*/}
+      {/*<Shop />*/}
+      {/*{*/}
+      {/*    [1, 2, 5, 7,10, 16].map((el, i) => <NumberInfo number={el} key={i} />)*/}
+      {/*}*/}
+      {/*<Hello />*/}
+      <SelectOrType items={items} />
 
     </>
   );
