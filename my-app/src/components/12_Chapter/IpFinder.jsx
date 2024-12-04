@@ -12,16 +12,19 @@ const IpFinder = () => {
     }, []);
 
     useEffect(() => {
-           if(ip) {
-               console.log(ip);
-           }
+        fetch(`http://ip-api.com/json/${ip}`)
+            .then(res => res.json())
+            .then(ipDetails => setGeoData(ipDetails));
     }, [ip]);
 
 
     if (geoData) {
         return (
             <div>
-                <p>{ip}</p>
+                <h2>IP: {geoData.query}</h2>
+                <p>Miasto: {geoData.city} </p>
+                <p>Kraj: {geoData.country}</p>
+                <p>Strefa czasowa: {geoData.timezone}</p>
             </div>
         );
     } else {
