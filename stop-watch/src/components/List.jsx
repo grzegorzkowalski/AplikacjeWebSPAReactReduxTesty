@@ -1,11 +1,13 @@
 import React from 'react';
+import {useSelector} from "react-redux";
 
 const List = () => {
+    const list = useSelector(state => state.list);
     return (
         <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            {
+                list.map((el, i) => <li key={i}>{el}</li>)
+            }
         </ul>
     );
 };
