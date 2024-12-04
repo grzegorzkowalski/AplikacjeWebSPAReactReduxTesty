@@ -11,6 +11,7 @@ import item from "./data/shopItem.js";
 import Box from "./components/07_Chapter/Box";
 import Clock from "./components/07_Chapter/Clock";
 import HelloWorld from "./components/07_Chapter/HelloWorld.jsx";
+import Buttons from "./components/08_Chapter/Buttons.jsx";
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
       <Box />
       <Clock />
       <HelloWorld />
+      <Buttons />
     </>
   );
 }
