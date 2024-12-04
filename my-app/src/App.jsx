@@ -15,6 +15,7 @@ import Buttons from "./components/08_Chapter/Buttons.jsx";
 import CountThings from "./components/08_Chapter/CountThings";
 import EventsTest from "./components/08_Chapter/EventsTest";
 import Shop from "./components/09_Chapter/Shop";
+import NumberInfo from "./components/10_Chapter/NumberInfo.jsx";
 
 function App() {
 
@@ -49,6 +50,10 @@ function App() {
       <CountThings />
       <EventsTest />
       <Shop />
+      {
+          [1, 2, 5, 7,10, 16].map((el, i) => <NumberInfo number={el} key={i} />)
+      }
+
     </>
   );
 }
